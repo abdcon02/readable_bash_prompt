@@ -38,7 +38,7 @@ C_NONE='\[\e[0m\]'
 #function to check if git branch
 
 function checkGit() {
-  if [ "$(vcprompt)" != "" ]
+  if [ -n "$(vcprompt)" ]
   then
       echo "git:"
   fi

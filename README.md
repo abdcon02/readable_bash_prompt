@@ -5,6 +5,10 @@
 ###Purpose
 Practice changing some bash configuration values.
 
+###Usage
+1. Copy this file into your Home directory.
+2. Install `vcprompt`
+
 ###Notes
 *PS1* - variable that holds the primary bash prompt.
 
