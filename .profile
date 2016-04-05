@@ -44,7 +44,6 @@ function checkGit() {
   fi
 }
 
-
 #Change the command prompt
 export PS1='$(checkGit)'${C_GREEN}'$(__git_ps1 "%s") '${C_PURPLE}'\w'${C_RED}' Ω '${C_NONE}
 

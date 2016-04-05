@@ -7,8 +7,7 @@ Practice changing some bash configuration values.
 
 ###Usage
 1. Copy this file into your Home directory.
-2. Install `vcprompt`
-3. In bash, run this command: `. ~/.profile`
+2. In bash, run this command: `. ~/.profile`
 
 ###Notes
 **PS1** - variable that holds the primary bash prompt.
@@ -17,11 +16,10 @@ Practice changing some bash configuration values.
 
 Look into separation of responsibilities. (and what about `~/.bashrc`?)
 
-
 ###Technologies
 
 * Bash
-* [vcprompt](https://github.com/djl/vcprompt) - Version control information in your prompt installed via Homebrew
+* Git
 
 ###License
 
