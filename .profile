@@ -35,18 +35,16 @@ C_NONE='\[\e[0m\]'
 #\W – Current working directory (i.e: Desktop/)
 #\w – Current working directory, full path (i.e: /Users/Admin/Desktop)
 
-#function to check if git branch
+#function to check if git branch exists
 
 function checkGit() {
-  if [ -n "$(vcprompt)" ]
-  then
+  ISGIT=$(__git_ps1 "%s")
+  if [ ! -z ${ISGIT} ]; then
       echo "git:"
   fi
 }
 
-#Change the command prompt
-export PS1='$(checkGit)'${C_GREEN}'$(vcprompt -f %b) '${C_PURPLE}'\w'${C_RED}' Ω '${C_NONE}
 
-#Change ls colors
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
+#Change the command prompt
+export PS1='$(checkGit)'${C_GREEN}'$(__git_ps1 "%s") '${C_PURPLE}'\w'${C_RED}' Ω '${C_NONE}
+
