@@ -35,8 +35,7 @@ C_NONE='\[\e[0m\]'
 #\W – Current working directory (i.e: Desktop/)
 #\w – Current working directory, full path (i.e: /Users/Admin/Desktop)
 
-#function to check if git branch exists
-
+# checks if git branch exists
 function checkGit() {
   ISGIT=$(__git_ps1 "%s")
   if [ ! -z ${ISGIT} ]; then
@@ -46,4 +45,3 @@ function checkGit() {
 
 #Change the command prompt
 export PS1='$(checkGit)'${C_GREEN}'$(__git_ps1 "%s") '${C_PURPLE}'\w'${C_RED}' Ω '${C_NONE}
-
